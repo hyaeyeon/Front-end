@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Simple Example</title>
+</head>
+<body>
+    <h1 id="pageTitle" class="first">Hello world!</h1>
+    <h1 id="pageTitle">Hello world!</h1>
+
+    <script>
+        // getElementById
+        // const pageTitle = document.getElementById('pageTitle')
+
+        // querySelector
+        // const pageTitle = document.querySelector('h1');
+
+        // querySelectorAll
+        // const pageTitle = document.querySelectorAll('h1');
+        // console.log(pageTitle)
+
+        // getElementsByClassName
+        // const pageTitle = document.getElementsByClassName('first')
+        // console.log(pageTitle)
+
+        // getElementsByTagName
+        const pageTitle = document.getElementsByTagName('h1')
+        console.log(pageTitle)
+
+
+        // 조작하기
+        pageTitle[1].textContent = "안녕 세상아!" 
+        // pageTitle[1].textContent = "안녕 세상아!" 
+    </script>
+</body>
+</html>
